@@ -229,7 +229,7 @@ def train():
                         lr_decay = 0.1,
                         n_gru_layers = 1)
 
-    wandb.init(config=hyperparameters, entity='hehsain', project='brooklyn_TDAC_GRU')
+    wandb.init(config=hyperparameters, entity='', project='brooklyn_TDAC_GRU') # fill wandb entity name
     # Save model inputs and hyperparameters
     config = wandb.config
     
@@ -257,7 +257,7 @@ def train():
 
         for steps in range(config.n_steps):
             if steps == 0:
-                fp = 'D:/RLinGUD/brooklyn_a2c_states/observation_iter0.png'
+                fp = 'D:/RLinGUD/brooklyn_a2c_states/observation_iter0.png' # initial state dir
             else:
                 fp = fps[-1]
             
@@ -352,7 +352,7 @@ def train():
 
 if __name__ == "__main__":
     # Log in to W&B account
-    wandb.login(key='a62c193ea97080a59a7f646248cd9ec23346c61c')
+    wandb.login(key='') # fill in wandb login key 
 
     sweep = False
     if sweep:
