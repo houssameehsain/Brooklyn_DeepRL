@@ -4,3 +4,7 @@ Urban block renewal maximizing outdoor thermal comfort using deep reinforcement 
 <p align="center">
   <img src="images/3.png" width='700'/>
 </p>
+
+<p align="center">
+  <img src="images/Reward_A2C.png" width='700'/>
+</p>
